@@ -62,7 +62,7 @@ $conn->close();
         padding: 20px;
         background-color: #FEE715;
         float: left;
-        width: 250px;
+        width: 400px;
         
         
       }
@@ -93,7 +93,7 @@ $conn->close();
   </head>
   <body>
     <div id="sidebar">
-      <h2><?php echo $lecturer['Name']; ?>! Dashboard</h2>
+      <h2><?php echo $_SESSION['email']; ?> Dashboard</h2>
       <a href="#">Profile</a>
       <a href="#">Subjects</a>
       <a href="#">Events</a>
@@ -102,7 +102,7 @@ $conn->close();
       <a href="logout.php">Logout</a>
     </div>
     <div id="content">
-      <h1>Welcome back, <?php echo $lecturer['Name']; ?>!</h1>
+      <h1>Welcome back, <?php echo $lecturer['Name']; ?></h1>
       <p >
         This is your Dashboard where you can manage your account , settings and much more.
       </p>
